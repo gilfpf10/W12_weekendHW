@@ -1,5 +1,6 @@
 package MusicShop;
 
+import Instruments.Trumpet;
 import Interfaces.ISell;
 
 import java.util.ArrayList;
@@ -16,11 +17,6 @@ public class MusicShop implements ISell {
 
     public String getName() {
         return name;
-    }
-
-    public void addStock(ISell item){
-     this.stock.add(item);
-
 
     }
     public int countStock() {
@@ -28,4 +24,12 @@ public class MusicShop implements ISell {
     }
 
 
+    public void addStock(Trumpet trumpet) {
+        this.stock.add(trumpet);
+
+    }
+
+    public int calculateMarkup() {
+        return 0;
+    }
 }

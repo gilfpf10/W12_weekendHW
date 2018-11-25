@@ -22,4 +22,7 @@ public class Guitar extends Instrument implements IPlay, ISell {
 
     }
 
+    public int calculateMarkup() {
+        return 0;
+    }
 }

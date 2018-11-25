@@ -13,4 +13,8 @@ public class MusicSheet extends Accessories implements ISell {
         return song;
 
     }
+
+    public int calculateMarkup() {
+        return 0;
+    }
 }

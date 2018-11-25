@@ -1,9 +1,7 @@
 import MusicShop.MusicShop;
-import MusicShop.MusicShop;
 import org.junit.Before;
 import org.junit.Test;
 import Instruments.Trumpet;
-import Interfaces.ISell;
 
 import static junit.framework.TestCase.assertEquals;
 
@@ -15,7 +13,6 @@ public class MusicShopTest {
     @Before
     public void setUp() throws Exception {
         musicShop = new MusicShop("Ryan's");
-        trumpet = new Trumpet("trump", "sony", "black", 1,12, 20);
     }
 
     @Test
@@ -31,7 +28,7 @@ public class MusicShopTest {
     @Test
     public void addStock(){
         musicShop.addStock(trumpet);
-        assertEquals(1, musicShop.addStock());
+        assertEquals(1, musicShop.countStock());
 
     }
 
